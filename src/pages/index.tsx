@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   useEffect(() => {
     console.log("💥 MOUNT HOME 💥");
+    return () => console.log("🚫 UNMOUNT HOME 🚫");
   }, []);
 
   return (
